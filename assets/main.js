@@ -1,9 +1,9 @@
-const submitIt = document.getElementById('btn')
-const inputName = document.getElementById('myName')
-const welcomeToTheBootcamp = document.getElementById('greetMe')
+let myName = document.getElementById("name")
+let myLink = document.getElementById("greetings")
+let myParagraph = document.getElementById("btn")
 
-submitIt.addEventListener('click', greetMe)
+myLink.addEventListener("click", greetings)
 
-function greetMe(){
-    welcomeToTheBootcamp.innerHTML = "Hello " + inputName.value + ", welcome to the bootcamp"
+function greetings(){
+    myParagraph.innerHTML = "Hello " + myName.value + ", welcome to the bootcamp" 
 }
